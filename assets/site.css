@@ -1,0 +1,32 @@
+main {
+    padding: 10px 50px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    clear: both;
+}
+
+.example {
+    display: block;
+    float: right;
+    font-size: .75rem;
+
+    margin-right: -75px;
+}
+
+.example img {
+    width: 275px;
+}
+
+.screenshot img {
+    width: 250px;
+}
+
+.example figcaption {
+    text-align: center;
+    display: block;
+}
