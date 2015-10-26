@@ -22,41 +22,120 @@
     <h1>We Are All the Cobbler's Children</h1>
 
     <p>
-        In software, we also save our best work for our customers.  Unfortunately <em>we also use software to make</em>
-        software. "Someday" rarely comes, and for decades some of the worst designed pieces of software you could 
+        In software, we also save our best work for our customers.  Unfortunately we also  <em>use software to make</em>
+        software. "Someday" rarely comes, and for decades some of the most maladapted pieces of software you could
         encounter were developer tools. Good Enough has ruled the day for a long time, and only in recent years have 
         things changed very much.
     </p>
+
+    <h1>How you can help</h1>
 
     <p>
         I am looking for like-minded individuals.  People who understand the multiplicative effect on productivity that
         a good tool offers, and the subtle ways that an otherwise good tool can undo its own advantages.  I'd like to
         find other people who count the cost of using their tools against the 'accidental complexity' of their projects
-        and are incentivized to find better options or make improvements to existing ones.
+        and are highly motivated to find better options or make improvements to existing ones.
     </p>
 
     <p>
         What I hope to do is create a small group of people, probably full stack developers, who understand Human 
         Factors but can also contribute substantially to tools development.  I'm hoping to organize people to identify
-        developer tools that are <em>almost</em> good and cooperate to fix them, and other tools that need better 
-        alternatives and work together to create them.
+        developer tools that are already in the range of Good Enough to 'fairly decent' and collaborate to fix them. And
+        also to identify other tools that need better alternatives and work together to create them or help people who
+        can.
     </p>
-    
+
+    <p>
+        If you'd like to help, check out the list of projects below, or suggest a new one.  
+    </p>
+
     <h1>What We're Working On</h1>
     
-    <h2><a href="https://github.com/cobblers-children/docker-jenkins">Using Docker to Run Selenium Tests on Jenkins</a></h2>
+    <h2>CommonMark</h2>
     
     <p>
+        In the world of Wiki and Markdown, fragmentation has always been a problem.  In the interests of easing that
+        learning curve we support Jeff Atwood and his friends' attempts to create 
+        <a href="http://commonmark.org/">CommonMark</a>, and to create new ways of teaching simplified markup to new 
+        people.
+    </p>
+    <p> 
+        As the world has become more and more computerized, we have moved on from solving purely technological problems
+        to trying to organize information and people to deal with social, political, environmental, and health issues.
+        This now often involves gathering ('crowdsourcing') short prose from experts.  The fact of the matter is that 
+        the people we most need to gather information from, those with the deepest expertise or the most interesting 
+        experiences are often not particularly computer savvy, and have no interest in becoming so.
+    </p>
+    <p>
+        We are also working with markdown learning tools such as
+        <a href="https://github.com/cobblers-children/commonmarkify">commonmarkify</a>, which is our CommonMark 
+        adaptation of the <a href="https://github.com/tibastral/markdownify">markdownify</a> project, a hybrid MarkDown 
+        editor that formats the source markup in a style similar to the final output.
+    </p>
+
+    <h2>Using Docker to Run Selenium Tests on Jenkins</h2>
+
+    <p>
         Running Selenium in Docker is supported by the Selenium Team, and is a great way to run tests locally without
-        worrying about an errant keystroke causing your tests to fail.  This docker-compose script can be used to run 
+        worrying about an errant keystroke causing your tests to fail.  This docker-compose script can be used to run
         Selenium tests on your CI server, which is typically a headless environment.  This also supports remote
         observation of a Selenium run, an important debugging option that is often overlooked.
     </p>
+
+    <p>
+        This project, <a href="https://github.com/cobblers-children/docker-jenkins">'docker-jenkins'</a> is just a small
+        set of scripts to combine work done by the Jenkins community with work done by the Selenium community into
+        something that is interesting and useful in its own right.
+    </p>
+
+    <h2>Other Avenues</h2>
+    
+    <h3>Safe by Design Libraries</h3>
     
     <p>
-        This project is just a small set of scripts to combine work done by the Jenkins community with work done by the
-        Selenium community into something that is interesting and useful in its own right.
+        In addition to these projects, we have some other ideas we'd love to work on.  The internet is rife with 
+        articles proclaiming the Top 10 Mistakes in Problem Domain X, in which they enumerate the common or even clichéd
+        manner in which we as developers often manage to produce the same classes of errors in our code.  We believe
+        that rather than indicating a design flaw with the human brain (although we allow that there are situations when
+        this is the case), that it is instead due to Human Factors in the API design.
     </p>
+    <p>
+        Most APIs are filled with low level details and false friend functions which harm the obviousness of a piece of
+        code.  We believe in the idea that there can and should be Safe by Design alternatives to these tools in which 
+        code is Obviously Correct or Obviously Incorrect.  Some areas we wish to apply this principle to are:
+    </p>
+    <ul>
+        <li>
+            <a href="http://infiniteundo.com/post/25509354022/more-falsehoods-programmers-believe-about-time">Time calculations</a> 
+            - no two machines will agree on what time it is or what time it will be, even with NTP
+        </li>
+        <li>Internationalization - composing sentence fragments makes you sound like Yoda</li>
+        <li>Caching - implicit caching is dangerous and should be avoided.  Know when you're caching.</li>
+    </ul>
+    
+    <h3>Multi-device programming</h3>
+    
+    <p>
+        We are fast approaching a world where only technologists own fast computers.  In the early 90's a "Developer 
+        Grade Machine" could easily run you $8000 in inflation-adjusted dollars.  Today you can have a similar machine,
+        often for much less than $2000.  But with everyone migrating to tablets and smart phones we might not be able to
+        enjoy those economies of scale for much longer.  There may come a day when developers are buying gamer machines
+        or server grade hardware because nothing else exists.
+    </p>
+    
+    <p>
+        At the same time we have all of these internet gadgets, and unless we are specifically developing software for
+        them we do not benefit from them in our daily coding, and when they become too antiquated we have no use for 
+        them at all, even though they could work as an auxiliary display.  We would like to see these devices applied to
+        greater use:
+    </p>
+    
+    <ul>
+        <li>Browser integration with IDEs, so that tablets can be used to visualize and navigate project information</li>
+        <li>Browser integration with reporting and code analysis tools to provide live data</li>
+        <li>High quality Responsive Design for common software developer tools</li>
+        <li>Ubiquity of 'livereload' behavior, allowing for faster confirmation of cross-device compatibility</li>
+    </ul>
 </main>
 </body>
 </html>
