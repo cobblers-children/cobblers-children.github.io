@@ -11,21 +11,21 @@
 
 <body>
 <main class="main">
-    <h1>The Cobbler's Children have no Shoes</h1>
+    <h1>&quot;The Cobbler's Children have no Shoes&quot;</h1>
     <p>
         There is an old phrase, it has appeared in <a href="http://english.stackexchange.com/questions/159004/the-cobblers-children-have-no-shoes">different forms
         in perhaps a dozen languages</a>, but the sentiment is all the same:  Since you do a thing for a living, 
-        'someday' you will do the thing properly for yourself and your family, but 'for now' you save all your best 
-        effort for your customers.  
+        'someday' you will do the thing properly for yourself and your family, but right now, you save all your best
+        effort for your customers.
     </p>
 
     <h1>We Are All the Cobbler's Children</h1>
 
     <p>
-        In software, we also save our best work for our customers.  Unfortunately we also  <em>use software to make</em>
-        software. "Someday" rarely comes, and for decades some of the most maladapted pieces of software you could
+        In software, we also save our best work for our customers.  Unfortunately we also <em>use software to make
+        software</em>. "Someday" rarely comes, and for decades some of the most maladapted pieces of software you could
         encounter were developer tools. Good Enough has ruled the day for a long time, and only in recent years have 
-        things changed very much.
+        things changed in any perceptible manner.
     </p>
 
     <h1>How you can help</h1>
@@ -55,8 +55,62 @@
         See the full list on our <a href="https://github.com/cobblers-children">GitHub organization page</a>, but here
         are the highlights.
     </p>
+
+    <h2>Production-Ready Frameworks</h2>
+        <p>
+            The HEW Projects.
+        </p>
+
+    <p>
+        For ease of development, many libraries come configured in a very easy to start manner.  Some say the user
+        should know better, others claim the code should be secure by default.  The argument is always an either-or
+        scenario.
+    </p>
+
+    <p>
+        In an active community the definition of 'correct configuration' changes over time.  A project generator may
+        help keep new developers safe, but create challenges for existing users.  In place of generators we propose
+        creating simple Git repositories that can be forked, so that users can periodically fetch changes from the
+        upstream repository to stay in sync.  Getting the base project correct out of the box becomes a group effort,
+        rather than down to each team.
+    </p>
+
+    <p>
+        This structure also should work wonderfully in a microservices architecture.  Getting headers, logging,
+        failure behaviors and load balancing right and copying it across projects using Git, rather than by hand.
+    </p>
+
+    <h2>Multi-device programming</h2>
+
+    <p>
+        We are fast approaching a world where only technologists own fast computers.  In the early 90's a "Developer
+        Grade Machine" could easily run you $8000 in inflation-adjusted dollars.  Today you can have a similar machine,
+        often for much less than $2000.  But with everyone migrating to tablets and smart phones we might not be able to
+        enjoy those economies of scale for much longer.  There may come a day when developers are buying gamer machines
+        or server grade hardware because nothing else exists.
+    </p>
+
+    <p>
+        At the same time we have all of these internet gadgets, and unless we are specifically developing software for
+        them we do not benefit from them in our daily coding, and when they become too antiquated we have no use for
+        them at all, even though they could work as an auxiliary display.  We would like to see these devices applied to
+        greater use:
+    </p>
+
+    <ul>
+        <li>Browser integration with IDEs, so that tablets can be used to visualize and navigate project information</li>
+        <li>Browser integration with reporting and code analysis tools to provide live data</li>
+        <li>High quality Responsive Design for common software developer tools</li>
+        <li>Ubiquity of 'livereload' behavior, allowing for faster confirmation of cross-device compatibility</li>
+    </ul>
+
+    <h2>Other Avenues</h2>
+
+    <p>
+        In addition to these projects, we have some other ideas we'd love to work on.
+    </p>
     
-    <h2>CommonMark</h2>
+    <h3>CommonMark</h3>
     
     <p>
         In the world of Wiki and Markdown, fragmentation has always been a problem.  In the interests of easing that
@@ -78,7 +132,29 @@
         editor that formats the source markup in a style similar to the final output.
     </p>
 
-    <h2>Using Docker to Run Selenium Tests on Jenkins</h2>
+    <h3>Safe by Design Libraries</h3>
+
+    <p>
+        The internet is rife with articles proclaiming the Top 10 Mistakes in Problem Domain X, in which they enumerate
+        the common or even clichéd manner in which we as developers often manage to produce the same classes of errors
+        in our code.  We believe that rather than indicating a moral failure by the user that it is instead due to Human
+        Factors in the API design.  As the number of libraries we use increases, this work will become much more important.
+    </p>
+    <p>
+        Most APIs are filled with low level details and false friend functions which harm the obviousness of a piece of
+        code.  We believe in the idea that there can and should be Safe by Design alternatives to these tools in which
+        code is Obviously Correct or Obviously Incorrect.  Some areas we wish to apply this principle to are:
+    </p>
+    <ul>
+        <li>
+            <a href="http://infiniteundo.com/post/25509354022/more-falsehoods-programmers-believe-about-time">Time calculations</a>
+            - no two machines will agree on what time it is or what time it will be, even with NTP
+        </li>
+        <li>Internationalization - composing sentence fragments makes you sound like Yoda</li>
+        <li>Caching - implicit caching is dangerous and should be avoided.  Know when you're caching.</li>
+    </ul>
+
+    <h3>Using Docker to Run Selenium Tests on Jenkins</h3>
 
     <p>
         Running Selenium in Docker is supported by the Selenium Team, and is a great way to run tests locally without
@@ -92,55 +168,6 @@
         set of scripts to combine work done by the Jenkins community with work done by the Selenium community into
         something that is interesting and useful in its own right.
     </p>
-
-    <h2>Other Avenues</h2>
-    
-    <h3>Safe by Design Libraries</h3>
-    
-    <p>
-        In addition to these projects, we have some other ideas we'd love to work on.  The internet is rife with 
-        articles proclaiming the Top 10 Mistakes in Problem Domain X, in which they enumerate the common or even clichéd
-        manner in which we as developers often manage to produce the same classes of errors in our code.  We believe
-        that rather than indicating a design flaw with the human brain (although we allow that there are situations when
-        this is the case), that it is instead due to Human Factors in the API design.
-    </p>
-    <p>
-        Most APIs are filled with low level details and false friend functions which harm the obviousness of a piece of
-        code.  We believe in the idea that there can and should be Safe by Design alternatives to these tools in which 
-        code is Obviously Correct or Obviously Incorrect.  Some areas we wish to apply this principle to are:
-    </p>
-    <ul>
-        <li>
-            <a href="http://infiniteundo.com/post/25509354022/more-falsehoods-programmers-believe-about-time">Time calculations</a> 
-            - no two machines will agree on what time it is or what time it will be, even with NTP
-        </li>
-        <li>Internationalization - composing sentence fragments makes you sound like Yoda</li>
-        <li>Caching - implicit caching is dangerous and should be avoided.  Know when you're caching.</li>
-    </ul>
-    
-    <h3>Multi-device programming</h3>
-    
-    <p>
-        We are fast approaching a world where only technologists own fast computers.  In the early 90's a "Developer 
-        Grade Machine" could easily run you $8000 in inflation-adjusted dollars.  Today you can have a similar machine,
-        often for much less than $2000.  But with everyone migrating to tablets and smart phones we might not be able to
-        enjoy those economies of scale for much longer.  There may come a day when developers are buying gamer machines
-        or server grade hardware because nothing else exists.
-    </p>
-    
-    <p>
-        At the same time we have all of these internet gadgets, and unless we are specifically developing software for
-        them we do not benefit from them in our daily coding, and when they become too antiquated we have no use for 
-        them at all, even though they could work as an auxiliary display.  We would like to see these devices applied to
-        greater use:
-    </p>
-    
-    <ul>
-        <li>Browser integration with IDEs, so that tablets can be used to visualize and navigate project information</li>
-        <li>Browser integration with reporting and code analysis tools to provide live data</li>
-        <li>High quality Responsive Design for common software developer tools</li>
-        <li>Ubiquity of 'livereload' behavior, allowing for faster confirmation of cross-device compatibility</li>
-    </ul>
 </main>
 </body>
 </html>
