@@ -28,6 +28,13 @@
         things changed in any perceptible manner.
     </p>
 
+    <p>
+        The problem with this is that humans negotiate, all the time, even when we don't think we are.  We tend to
+        adjust our expectations to what is going on around us. Those "Would you spent $1000 for this?" commercials
+        bank on this tendency.  It's called <b>Anchoring</b>.  Our belief is that if you use awful tools while trying to
+        make something great, you won't do your best work.
+    </p>
+
     <h1>How you can help</h1>
 
     <p>
@@ -56,10 +63,19 @@
         are the highlights.
     </p>
 
+    <h2>New Generation Project Management Tools</h2>
+
+    <p>
+        Virtually every single project management tool currently in existence was designed before CI/CD became
+        widespread. They all keep it at arm's length instead of inviting it in. In a very Paradox of Choice sense,
+        some of my best experiences with a PM tool were with Trac - a dead simple but highly integrated management
+        tool. We seek to build something on this philosophy, leveraging CI/CD concepts, and modern visualization tools.
+    </p>
+
     <h2>Production-Ready Frameworks</h2>
-        <p>
-            The HEW Projects.
-        </p>
+    <p>
+        The HEW Projects.
+    </p>
 
     <p>
         For ease of development, many libraries come configured in a very easy to start manner.  Some say the user
@@ -70,17 +86,47 @@
     <p>
         In an active community the definition of 'correct configuration' changes over time.  A project generator may
         help keep new developers safe, but create challenges for existing users.  In place of generators we propose
-        creating simple Git repositories that can be forked, so that users can periodically fetch changes from the
-        upstream repository to stay in sync.  Getting the base project correct out of the box becomes a group effort,
-        rather than down to each team.
+        leveraging underutilized features of DCVS tools such as Git, creating simple Git repositories that can be
+        forked, so that users can periodically merge changes from the upstream repository to stay in sync.  Getting the
+        base project correct out of the box becomes a group effort, rather than down to each team.
     </p>
 
     <p>
-        This structure also should work wonderfully in a microservices architecture.  Getting headers, logging,
-        failure behaviors and load balancing right and copying it across projects using Git, rather than by hand.
+        This structure also works well wonderfully in a microservices or other non-monolithic architecture.  Getting
+        headers, logging, failure behaviors, stat collection, correlationIDs, and load balancing right once, and copying
+        it across projects using Git, rather than by hand.
     </p>
 
-    <h2>Multi-device programming</h2>
+    <h2>CommonMark</h2>
+
+    <p>
+        In the world of Wiki and Markdown, fragmentation has always been a problem.  In the interests of easing that
+        learning curve we support Jeff Atwood and his friends' attempts to create
+        <a href="http://commonmark.org/">CommonMark</a>, and to create new ways of teaching simplified markup to new
+        people.
+    </p>
+    <p>
+        As the world has become more and more computerized, we have moved on from solving purely technological problems
+        to trying to organize information and people to deal with social, political, environmental, and health issues.
+        This now often involves gathering ('crowdsourcing') short prose from experts.  While this is changing over time,
+        the fact of the matter is that there are many interesting and worthwhile problem domains where computer skill
+        are not highly valued, and those with the deepest expertise or the most interesting experiences are still often
+        not particularly computer savvy, and have no interest in becoming so.
+    </p>
+    <p>
+        We are also working with markdown learning tools such as
+        <a href="https://github.com/cobblers-children/commonmarkify">commonmarkify</a>, which is our CommonMark
+        adaptation of the <a href="https://github.com/tibastral/markdownify">markdownify</a> project, a hybrid MarkDown
+        editor that formats the source markup in a style similar to the final output.
+    </p>
+
+    <h2>Other Avenues</h2>
+
+    <p>
+        In addition to these projects, we have some other ideas we'd love to work on.
+    </p>
+
+    <h3>Multi-device programming</h3>
 
     <p>
         We are fast approaching a world where only technologists own fast computers.  In the early 90's a "Developer
@@ -103,34 +149,6 @@
         <li>High quality Responsive Design for common software developer tools</li>
         <li>Ubiquity of 'livereload' behavior, allowing for faster confirmation of cross-device compatibility</li>
     </ul>
-
-    <h2>Other Avenues</h2>
-
-    <p>
-        In addition to these projects, we have some other ideas we'd love to work on.
-    </p>
-    
-    <h3>CommonMark</h3>
-    
-    <p>
-        In the world of Wiki and Markdown, fragmentation has always been a problem.  In the interests of easing that
-        learning curve we support Jeff Atwood and his friends' attempts to create 
-        <a href="http://commonmark.org/">CommonMark</a>, and to create new ways of teaching simplified markup to new 
-        people.
-    </p>
-    <p> 
-        As the world has become more and more computerized, we have moved on from solving purely technological problems
-        to trying to organize information and people to deal with social, political, environmental, and health issues.
-        This now often involves gathering ('crowdsourcing') short prose from experts.  The fact of the matter is that 
-        the people we most need to gather information from, those with the deepest expertise or the most interesting 
-        experiences are often not particularly computer savvy, and have no interest in becoming so.
-    </p>
-    <p>
-        We are also working with markdown learning tools such as
-        <a href="https://github.com/cobblers-children/commonmarkify">commonmarkify</a>, which is our CommonMark 
-        adaptation of the <a href="https://github.com/tibastral/markdownify">markdownify</a> project, a hybrid MarkDown 
-        editor that formats the source markup in a style similar to the final output.
-    </p>
 
     <h3>Safe by Design Libraries</h3>
 
